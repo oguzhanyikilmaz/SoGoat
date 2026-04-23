@@ -1,0 +1,13 @@
+services:
+  sogoat-web:
+    build: .
+    container_name: sogoat-app
+    ports:
+      - "3000:80"
+    networks:
+      - nginx_proxy
+    restart: always
+networks:
+  nginx_proxy:
+    external: true
+    name: nginx-proxy-manager_default
