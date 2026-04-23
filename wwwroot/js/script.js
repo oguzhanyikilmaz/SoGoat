@@ -6,12 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainContent = document.getElementById('main-content');
     
     // Toggle PDF Viewer
-    catalogBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        pdfSection.classList.add('active');
-        mainContent.style.transform = 'scale(0.95)';
-        mainContent.style.opacity = '0.3';
-    });
+    if (catalogBtn) {
+        catalogBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            pdfSection.classList.add('active');
+            mainContent.style.transform = 'scale(0.95)';
+            mainContent.style.opacity = '0.3';
+        });
+    }
 
     closePdf.addEventListener('click', () => {
         pdfSection.classList.remove('active');
