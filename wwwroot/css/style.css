@@ -1,125 +1,95 @@
-:root {
-    --bg-color: #ffffff;
-    --accent-color: #1a1a1a;
-    --glow-color: rgba(0, 0, 0, 0.05);
-    --font-family: 'Outfit', sans-serif;
-    --glass-bg: rgba(0, 0, 0, 0.03);
-    --glass-border: rgba(0, 0, 0, 0.1);
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--accent-color);
-    font-family: var(--font-family);
-    overflow: hidden;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+html, body {
+    background: #ffffff;
+    color: #000000;
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
-/* Navbar and Glow styles removed for minimal view */
-
-.container {
-    text-align: center;
+.panel {
+    position: relative;
     width: 100%;
 }
 
-.pdf-section {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -40%) scale(0.9);
-    width: 90vw;
-    height: 80vh;
-    background: var(--glass-bg);
-    backdrop-filter: blur(20px);
-    border: 1px solid var(--glass-border);
-    border-radius: 30px;
-    z-index: 200;
-    display: none;
-    flex-direction: column;
-    padding: 40px;
+.hero .goat {
+    position: absolute;
+    left: 33.333%;
+    top: 22.963%;
+    width: 30%;
+    height: 54.352%;
+    border: 0;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.tagline .row {
+    position: absolute;
+    left: 33.229%;
+}
+
+.tagline .row-sm {
+    top: 77.407%;
+    width: 20%;
+    height: 3.148%;
+}
+
+.tagline .row-lg {
+    top: 80.556%;
+    width: 33.646%;
+    height: 5.278%;
+}
+
+.tagline .reveal {
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+}
+
+.tagline .reveal img {
+    width: auto;
+    max-width: none;
+    height: 100%;
+}
+
+.tagline .caret {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background: #111111;
     opacity: 0;
-    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.pdf-section.active {
-    display: flex;
-    transform: translate(-50%, -50%) scale(1);
+.tagline .caret.on {
     opacity: 1;
 }
 
-.pdf-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+.tagline .caret.blink {
+    animation: caret-blink 1.05s steps(1) infinite;
 }
 
-#close-pdf {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: opacity 0.3s;
-}
-
-#close-pdf:hover {
-    opacity: 1;
-}
-
-.pdf-placeholder {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px dashed var(--glass-border);
-    border-radius: 20px;
-    font-weight: 300;
-    opacity: 0.4;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
+@keyframes caret-blink {
+    50% {
+        opacity: 0;
     }
 }
 
-.logo-wrapper {
-    position: relative;
-    display: inline-block;
-}
-
-.logo-image {
-    max-width: 80vw;
-    max-height: 70vh;
-    object-fit: contain;
-}
-
-/* Hover effect removed to blend with background */
-.logo-wrapper:hover .logo-image {
-    transform: none;
-}
-
-.footer {
+.footer .mail {
     position: absolute;
-    bottom: 40px;
-    font-size: 0.9rem;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    opacity: 0.4;
-    animation: fadeIn 1.5s 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    left: 78.44%;
+    top: 46.51%;
+    width: 14.01%;
+    height: 9.07%;
+    color: transparent;
+    font-size: 0;
 }

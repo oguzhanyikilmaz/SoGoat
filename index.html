@@ -1,34 +1,48 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoGoat | Kurumsal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>SoGoat</title>
+    <meta name="description" content="SoGoat — creative intelligence studio. The feed is a graveyard. We build monuments.">
     <link rel="stylesheet" href="wwwroot/css/style.css">
-    <meta name="description" content="SoGoat Kurumsal Web Sitesi - Modern ve Yenilikçi Çözümler">
 </head>
 
 <body>
-    <div class="container" id="main-content">
-        <div class="logo-wrapper">
-            <img src="wwwroot/images/SoGoat-1.png" alt="SoGoat" class="logo-image">
-        </div>
-    </div>
+    <main>
+        <section class="panel hero" aria-label="SoGoat">
+            <img src="wwwroot/images/hero.png" alt="SoGoat. Creative intelligence studio. The feed is a graveyard. We build monuments.">
+            <iframe class="goat" src="binary-goat-embed.html" title="Goat assembled from dots, ones and zeros" scrolling="no"></iframe>
+            <div class="tagline" aria-hidden="true">
+                <div class="row row-sm">
+                    <div class="reveal"><img src="wwwroot/images/tagline-1.png" alt=""></div>
+                    <span class="caret"></span>
+                </div>
+                <div class="row row-lg">
+                    <div class="reveal"><img src="wwwroot/images/tagline-2.png" alt=""></div>
+                    <span class="caret"></span>
+                </div>
+            </div>
+        </section>
 
-    <div class="pdf-section" id="pdf-viewer">
-        <div class="pdf-header">
-            <h2>Kurumsal Katalog</h2>
-            <button id="close-pdf">&times;</button>
-        </div>
-        <div class="pdf-placeholder">
-            <p>Katalog Yakında Yüklenecek...</p>
-        </div>
-    </div>
+        <section class="panel" aria-label="Services">
+            <img src="wwwroot/images/services.png" alt="01 brand strategy and positioning. 02 creative direction and visual identity. 03 campaign creation, production and management. 04 ai-powered film and production. 05 social media management. 06 sonic identity.">
+        </section>
 
+        <section class="panel" aria-label="Manifesto">
+            <img src="wwwroot/images/manifesto.jpg" alt="There's a version of your brand you haven't seen yet. That's where we begin.">
+        </section>
+
+        <section class="panel" aria-label="Clients">
+            <img src="wwwroot/images/clients.png" alt="Client marks: Back and Bond, DataSapien, Genfar, London Regenerative Institute, Madame Malachite, Max Fly, Morphiya, Paw Scene, Pia, Sensible Stats, Siesta, Süvari, The Bubble Kids, The Land of Legends, Zyxel Networks.">
+        </section>
+
+        <section class="panel footer" aria-label="Contact">
+            <img src="wwwroot/images/footer.png" alt="SoGoat. so@sogoat.com">
+            <a class="mail" href="mailto:so@sogoat.com">so@sogoat.com</a>
+        </section>
+    </main>
     <script src="wwwroot/js/script.js"></script>
 </body>
 
