@@ -84,6 +84,53 @@ img {
     }
 }
 
+.services {
+    aspect-ratio: 1920 / 1080;
+    background: #ffffff;
+}
+
+.service-list {
+    list-style: none;
+    position: absolute;
+    inset: 0;
+}
+
+.service-line {
+    position: absolute;
+    left: 22.865%;
+    width: 59.271%;
+    height: 6.574%;
+}
+
+.service-line img {
+    width: auto;
+    height: auto;
+    display: block;
+    transition: opacity 0.18s ease;
+}
+
+.service-line:hover img {
+    opacity: 0.28;
+}
+
+.line-1 { top: 29.352%; }
+.line-1 img { width: 62.126%; }
+
+.line-2 { top: 35.926%; }
+.line-2 img { width: 71.88%; }
+
+.line-3 { top: 42.5%; }
+.line-3 img { width: 100%; }
+
+.line-4 { top: 49.167%; }
+.line-4 img { width: 64.499%; }
+
+.line-5 { top: 55.741%; }
+.line-5 img { width: 59.051%; }
+
+.line-6 { top: 62.315%; }
+.line-6 img { width: 31.108%; }
+
 .footer .mail {
     position: absolute;
     left: 78.44%;
