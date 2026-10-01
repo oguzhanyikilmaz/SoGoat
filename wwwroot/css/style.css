@@ -87,6 +87,7 @@ img {
 .services {
     aspect-ratio: 1920 / 1080;
     background: #ffffff;
+    container-type: inline-size;
 }
 
 .service-list {
@@ -97,14 +98,15 @@ img {
 
 .service-line {
     position: absolute;
-    left: 22.865%;
-    width: 59.271%;
-    height: 6.574%;
+    left: 22.865cqw;
+    width: 59.3cqw;
+    height: 3.7cqw;
 }
 
-.service-line img {
-    width: auto;
+.services .service-line img {
+    width: var(--line);
     height: auto;
+    max-width: none;
     display: block;
     transition: opacity 0.18s ease;
 }
@@ -113,23 +115,12 @@ img {
     opacity: 0.28;
 }
 
-.line-1 { top: 29.352%; }
-.line-1 img { width: 62.126%; }
-
-.line-2 { top: 35.926%; }
-.line-2 img { width: 71.88%; }
-
-.line-3 { top: 42.5%; }
-.line-3 img { width: 100%; }
-
-.line-4 { top: 49.167%; }
-.line-4 img { width: 64.499%; }
-
-.line-5 { top: 55.741%; }
-.line-5 img { width: 59.051%; }
-
-.line-6 { top: 62.315%; }
-.line-6 img { width: 31.108%; }
+.line-1 { top: 16.51cqw; --line: 36.823cqw; }
+.line-2 { top: 20.208cqw; --line: 42.604cqw; }
+.line-3 { top: 23.906cqw; --line: 59.271cqw; }
+.line-4 { top: 27.656cqw; --line: 38.229cqw; }
+.line-5 { top: 31.354cqw; --line: 35cqw; }
+.line-6 { top: 35.052cqw; --line: 18.438cqw; }
 
 .footer .mail {
     position: absolute;
