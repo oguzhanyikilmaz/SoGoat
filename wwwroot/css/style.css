@@ -103,17 +103,11 @@ img {
 }
 
 @media (max-width: 768px) {
-    html {
-        scroll-snap-type: y mandatory;
-    }
-
     .hero,
     .services,
     .manifesto {
         height: 100vh;
         height: 100dvh;
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
         overflow: hidden;
     }
 
