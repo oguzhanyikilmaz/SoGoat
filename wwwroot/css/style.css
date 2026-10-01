@@ -101,3 +101,83 @@ img {
     color: transparent;
     font-size: 0;
 }
+
+@media (max-width: 768px) {
+    html {
+        scroll-snap-type: y mandatory;
+    }
+
+    .hero,
+    .services,
+    .manifesto {
+        height: 100vh;
+        height: 100dvh;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        overflow: hidden;
+    }
+
+    .hero > img {
+        height: auto;
+    }
+
+    .hero .goat,
+    .hero .tagline .row {
+        z-index: 1;
+    }
+
+    .hero .goat {
+        left: 8vw;
+        top: 16dvh;
+        width: 84vw;
+        height: 58dvh;
+    }
+
+    .tagline .row-sm,
+    .tagline .row-lg {
+        left: 6vw;
+        top: auto;
+    }
+
+    .tagline .row-sm {
+        bottom: calc(5dvh + 9.4vw);
+        width: 52vw;
+        height: 4.6vw;
+    }
+
+    .tagline .row-lg {
+        bottom: 5dvh;
+        width: 88vw;
+        height: 7.8vw;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #ffffff;
+    }
+
+    .services > img {
+        display: none;
+    }
+
+    .services .svc-line img {
+        width: 155%;
+        max-width: none;
+        margin-left: -31.4%;
+    }
+
+    .manifesto {
+        display: flex;
+        align-items: center;
+        background: #000000;
+    }
+
+    .manifesto img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+}
