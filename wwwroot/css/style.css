@@ -38,31 +38,35 @@ img {
 
 .tagline .row-sm {
     top: 77.407%;
-    width: 20%;
-    height: 4.259%;
+    width: 19.17%;
+    height: 3.573%;
 }
 
 .tagline .row-lg {
     top: 80.556%;
     width: 33.646%;
-    height: 6.575%;
+    height: 5.997%;
 }
 
 .tagline .row-sm .caret {
-    height: 78.3%;
+    height: 83.2%;
 }
 
 .tagline .row-lg .caret {
-    height: 83.1%;
+    height: 79.7%;
 }
 
 .tagline .reveal {
+    position: relative;
     height: 100%;
     width: 0;
     overflow: hidden;
 }
 
 .tagline .reveal img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: auto;
     max-width: none;
     height: 100%;
@@ -145,15 +149,15 @@ img {
     }
 
     .tagline .row-sm {
-        bottom: calc(5dvh + 11.3vw);
-        width: 52vw;
-        height: 6.22vw;
+        bottom: calc(5dvh + 10vw);
+        width: 50.1vw;
+        height: 5.26vw;
     }
 
     .tagline .row-lg {
         bottom: 5dvh;
         width: 88vw;
-        height: 9.72vw;
+        height: 8.82vw;
     }
 
     .services {
